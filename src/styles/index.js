@@ -42,3 +42,16 @@ export const themeColorer = arg => {
 }
 
 export const darkColorer = (num = 15, opa = 1) => `rgba(${num}, ${num}, ${num}, ${opa})`;
+
+// skyline editor setting
+
+////// Darkmode editor
+
+export const coderDark = '#1E1E1E';
+export const filesDark = '#252526';
+
+export const coderLight = '#FFFFFF';
+export const filesLight = '#F3F3F3';
+
+export const coderColorer = () => ThemeEvent().darkMode ? coderDark : coderLight;
+export const filesColorer = () => ThemeEvent().darkMode ? filesDark : filesLight;

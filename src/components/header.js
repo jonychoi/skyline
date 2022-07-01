@@ -24,6 +24,11 @@ export const Header = ({setTempstate}) => {
                         RUN
                     </Text>
                 </Link>
+                <Link margin="margin-left: 50px;" onClick={() => setTempstate(3)}>
+                    <Text className="ff" hovercolor="#00dcff">
+                        LOGIN
+                    </Text>
+                </Link>
             </Row>
         </Row>
     )
